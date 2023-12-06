@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoSecTech</title>
+
+    <link rel="stylesheet" href="Welcome/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <nav class="myNav">
+        <a href="" class="logo" id="top"><img src="Images/logo2.png" alt="Logo"></a>
+    </nav>
+
+    <header>
+        <div class="left">
+            <h1>InfoSecTech</h1>
+            <h2 class="personnality" id="me"> 
+            </h2>
+            <a href="#here" class="call"><button type="button" class="element">Contactez-nous</button></a>
+            
+        </div>
+
+        <div class="right">
+            <div class="photo">
+                <div class="tof">
+                    <img src="Images/logoNoir.jpg" alt="InfoSecTech">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>Nos Récentes Implémentations</h2>
+        <div class="projet">
+            <div class="pp">
+                <div class="imageP">
+                    <img src="Images/accueil/HIDS-Wazuh.png" alt="WAZUH HIDS">
+                </div>
+
+                <div class="other">
+                    <p class= "title">Host-Based Intrusion Detection System avec Wazuh pour IPNET INSTITUTE OF TECHNOLOGY</p>
+                    <div class="infos"><span><p>La sécurité informatique est une préoccupation majeure pour les entreprises qui font face à des risques croissants de cyberattaques. L'utilisation d'un Host-based Intrusion Detection System (HIDS) tel que Wazuh est essentielle pour protéger les systèmes informatiques. Wazuh offre des fonctionnalités avancées en utilisant des mécanismes sophistiqués et en s'intégrant à Elasticsearch et Kibana. Cela permet une surveillance approfondie, une détection précoce des incidents de sécurité et une prévention des cyberattaques. En adoptant Wazuh, les entreprises renforcent la sécurité de leurs systèmes, protègent leurs données confidentielles et assurent la continuité de leurs activités. Il est important d'agir rapidement en mettant en place un HIDS comme Wazuh pour se prémunir contre les risques et garantir la sécurité du système informatique de l'entreprise.</p></span></div>
+                </div>
+            </div>
+
+            <div class="pp">
+                <div class="imageP">
+                    <img src="Images/accueil/Active-Directory.png" alt="Active Directory">
+                </div>
+
+                <div class="other">
+                    <p class= "title">Gestion de l’authentification des utilisateurs et de partage de ressources dans un réseau au moyen de Microsoft Active Directory Services pour IPNET INSTITUTE OF TECHNOLOGY</p>
+                    <div class="infos"><span><p>Le projet de gestion de l'authentification des utilisateurs et du partage de ressources dans un réseau au moyen de Microsoft Active Directory Services consiste à mettre en place une infrastructure basée sur Active Directory pour gérer de manière centralisée l'identification des utilisateurs, les autorisations d'accès et le partage de ressources dans un réseau. Active Directory permet de créer une base de données d'utilisateurs et de groupes, d'attribuer des permissions aux ressources, de gérer les stratégies de sécurité et de faciliter l'administration du réseau. Cela offre une approche sécurisée et cohérente pour contrôler l'accès aux fichiers, aux imprimantes, aux applications et à d'autres ressources réseau. L'objectif principal du projet est d'améliorer la sécurité, la gestion et l'efficacité du réseau en centralisant et en simplifiant le processus d'authentification et de partage des ressources.</p></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article id="here">
+        <section id="contact" class="section-contact">
+            <h2>Parlons de vos besoins</h2>
+            <form method="post" action="mailto:eddie.gbaguidi@eddieinfosec.me" enctype="text/plain">
+                <div class="form-nom-email">
+                    <div class="form-column">
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" required/>
+                    </div>
+                    <div class="form-column">
+                        <label for="email">email</label>
+                        <input type="e-mail" name="email" id="email" required/>
+                    </div>
+                    <div class="form-column">
+                        <label for="fichiers">Fichier</label>
+                        <input type="file" name="fichiers" id="fichiers" multiple/>
+                    </div>
+                    <div class="form-column">
+                        <label for="rdv">Prendre un rendez-vous</label>
+                        <input type="datetime-local" name="rdv" id="rdv">
+                    </div>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10" required>
+                </textarea>
+                <input type="submit" value="ENVOYER" class="cta" />                    
+                
+                <input type="reset" value="Effacer">
+        
+            </form>
+        </section>
+
+    </article>
+
+    <footer>
+        <div class="foot">
+            <a href="#top" class="logo"><img src="Images/logo2.png" alt="Logo"></a>
+        </div>
+    </footer>
+    
+    <script src="Welcome/script.js"></script>
+</body>
+</html>

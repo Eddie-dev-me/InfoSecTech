@@ -1,0 +1,410 @@
+/* CSS pour le style global */
+
+/* Réglez le comportement de défilement pour les liens de défilement fluide */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Définissez les variables de couleur principale et de couleur d'arrière-plan */
+:root {
+    --main-color: rgb(60, 181, 214); /* Couleur principale */
+    --bg-color: #35485b; /* Couleur d'arrière-plan */
+}
+
+/* Style global du corps de la page */
+body {
+    background-color: var(--bg-color); /* Couleur d'arrière-plan */
+    padding: 30px; /* Espacement intérieur */
+    font-family: 'Arial Narrow'; /* Police de caractères */
+    color: var(--main-color); /* Couleur du texte principal */
+    margin: 10px; /* Marge autour du corps de la page */
+}
+
+/* Style de navigation */
+nav.myNav {
+    display: flex;
+}
+
+/* Style du logo de navigation */
+nav.myNav a.logo img,
+footer .foot a img {
+    height: 50px;
+    width: 100px;
+}
+
+/* Style du logo */
+a.logo {
+    margin-right: auto;
+}
+
+/* Style des éléments de navigation */
+.element {
+    text-decoration: none;
+    color: var(--main-color); /* Couleur du texte principal */
+    font-size: 20px;
+    margin: 0px 20px; /* Marge autour des éléments */
+    padding: 10px; /* Espacement intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    border: 1px solid var(--main-color); /* Bordure */
+    transition: 0.5s; /* Transition fluide */
+    letter-spacing: 0.5px; /* Espacement des lettres */
+}
+
+/* Style au survol des éléments de navigation */
+.element:hover {
+    background-color: var(--main-color); /* Couleur de fond au survol */
+    color: black; /* Couleur du texte au survol */
+    box-shadow: 0 0 5px var(--main-color),
+                0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 200px var(--main-color); /* Ombre */
+    -webkit-box-reflect: below 1px linear-gradient(transparent); /* Réflexion sous l'élément */
+}
+
+/* Style pour les icônes des réseaux sociaux */
+div.social {
+    display: flex;
+}
+
+/* Style des images */
+img {
+    color: #ffffff;
+}
+
+/* Animation de défilement des liens du menu */
+a.element span :nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent);
+    animation: animate1 1s infinite;
+}
+
+/* Style du bouton d'appel à l'action */
+a.call button.element {
+    color: #ffffff;
+}
+
+/* Style des icônes */
+i {
+    color: #ffffff;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+/* Style au survol des icônes */
+i:hover {
+    color: rgb(60, 181, 214);
+    transition: 0.5s;
+}
+
+/* Animation de défilement des liens du menu */
+@keyframes animate1 {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Style de la barre de navigation */
+nav {
+    margin-bottom: 100px;
+}
+
+/* Styles spécifiques à l'en-tête */
+
+/* En-tête de la page */
+header {
+    display: flex;
+}
+
+/* Style du titre principal */
+h1 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+/* Style des éléments de gauche dans l'en-tête */
+header div.left {
+    width: 60%;
+    justify-content: center;
+}
+
+/* Style des éléments de droite dans l'en-tête */
+header div.right {
+    width: 40%;
+}
+
+/* Style de la photo de l'utilisateur */
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 30%;
+    height: 55%;
+    margin-top: 40px;
+    margin-left: 30%;
+    border-radius: 50%;
+    border-right: .2em solid var(--main-color);
+    border-left: .2em solid var(--main-color);
+}
+
+/* Style de la photo de l'utilisateur au survol */
+.tof img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-70%, -70%) rotate(0);
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    margin-top: 17.5%;
+    margin-left: 18.5%;
+    border-radius: 50%;
+    border-top: .2em solid rgb(60, 181, 214);
+    border-bottom: .2em solid rgb(60, 181, 214);
+}
+
+/* Style au survol de la photo de l'utilisateur */
+.tof img:hover {
+    border-right: .3em solid #ffffff;
+    border-left: .3em solid #ffffff;
+    transition: 2.5s;
+    transform: translateY(2);
+    opacity: 0.5;
+    content: url(../Images/logoNoir.jpg);
+}
+
+/* Style du bouton d'appel à l'action */
+button.element {
+    margin-left: 300px;
+    margin-top: 10px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    border-radius: 4rem;
+}
+
+/* Style au survol du bouton d'appel à l'action */
+button.element:hover {
+    transition: 7s;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(60, 181, 214);
+    transition: 0.5s;
+    background-color: rgb(60, 181, 214);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* Styles pour la section principale */
+section {
+    margin-top: 150px;
+}
+
+/* Style du titre de la section */
+section h2 {
+    text-align: center;
+}
+
+/* Style des projets */
+div.projet {
+    margin-top: 80px;
+}
+
+/* Style des blocs de projet */
+div.pp {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    max-width: max-content;
+    height: fit-content;
+    max-height: max-content;
+}
+
+/* Style au survol des blocs de projet */
+div.pp:hover {
+    transform: translateY(15px);
+    transition: 3s;
+}
+
+/* Style des images de projet */
+div.imageP img {
+    margin: 5px;
+    padding: 100px;
+    width: 35%;
+}
+
+/* Style au survol des images de projet */
+div.imageP img:hover {
+    width: 70%;
+    height: 50%;
+    transition: 3s;
+}
+
+/* Style des informations supplémentaires sur le projet */
+div.other {
+    width: 60%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style du titre des informations supplémentaires */
+div.other p.title {
+    font-size: 30px;
+    font-style: bold;
+    color: rgb(60, 181, 214);
+}
+
+/* Style des informations */
+div.infos span {
+    font-size: 22px;
+    color: black;
+    text-align: left;
+}
+
+/* Styles pour la section de contact */
+
+/* Style du titre de la section de contact */
+.section-contact h2 {
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Style du formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+}
+
+/* Style des champs de nom et d'email */
+.form-nom-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Style des colonnes du formulaire */
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Style des champs de saisie */
+input {
+    height: 20px;
+    color: black;
+}
+
+/* Style des champs de saisie et des zones de texte */
+input,
+textarea {
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+}
+
+/* Style des étiquettes */
+label {
+    margin-bottom: 1px;
+}
+
+/* Style des boutons de soumission et de réinitialisation */
+input[type='submit'],
+input[type='reset'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+    height: 45px;
+}
+
+/* Style au survol du bouton de réinitialisation */
+input[type='reset']:hover {
+    box-shadow: 2px 2px 5px 5px red;
+    background-color: red;
+    color: white;
+}
+
+/* Style au survol du bouton de soumission */
+input[type='submit']:hover {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(60, 181, 214);
+    background-color: rgb(60, 181, 214);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/* Style du pied de page */
+footer {
+    margin-top: 70px;
+    display: flex;
+}
+
+/* Style des icônes de réseaux sociaux dans le pied de page */
+footer div.social {
+    margin-left: 1000px;
+}
+
+/* Style au survol des icônes de réseaux sociaux dans le pied de page */
+footer div.social a div i {
+    color: var(--main-color);
+}
+
+/* Style au survol des icônes de réseaux sociaux dans le pied de page */
+footer div.social a div i:hover {
+    color: white;
+}
+
+/* Media Queries pour les tailles d'écran */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+}
+
+/* Styles pour les écrans de petite taille (smartphone) */
+@media (max-width: 767px) {
+    /* Réduisez davantage la taille du titre de l'en-tête pour les smartphones */
+    h1 {
+        font-size: 40px;
+    }
+
+    /* Réglez la largeur de la photo de l'utilisateur pour les smartphones */
+    .photo {
+        width: 15%;
+        height: 35%;
+    }
+
+    /* Réduisez la taille des éléments de navigation pour les smartphones */
+    .element {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
